@@ -51,33 +51,31 @@ Important operational detail:
 
 ## Quick Start
 
+Install:
+
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -e ".[dev]"
 ```
 
-Create a local `.env` file yourself and add only the variables you need.
-
-Minimum example:
+Create `.env`:
 
 ```env
-REDDIT_CLIENT_ID=your_reddit_client_id
-REDDIT_CLIENT_SECRET=your_reddit_client_secret
 REDDIT_USER_AGENT=script:reddit-lead-monitor:v1.0 (by /u/your_username)
+# optional for authenticated Reddit API
+# REDDIT_CLIENT_ID=your_reddit_client_id
+# REDDIT_CLIENT_SECRET=your_reddit_client_secret
 ```
 
-Then start both processes:
+Run:
 
 ```bash
 python -m reddit_leads.worker
 uvicorn reddit_leads.web:app --reload
 ```
 
-Open:
-
-- dashboard: `http://127.0.0.1:8000`
-- health check: `http://127.0.0.1:8000/health`
+Open `http://127.0.0.1:8000`
 
 ## Configuration
 
