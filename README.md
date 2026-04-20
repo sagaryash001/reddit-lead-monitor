@@ -89,6 +89,32 @@ If these are not set, the worker can fall back to Reddit public JSON reads for l
 - `GROQ_MODEL=llama-3.1-8b-instant`
 - `AI_MIN_KEYWORD_SCORE=4`
 
+Simple setup for a personal Groq key:
+
+1. Create a Groq API key in your Groq dashboard.
+2. Open your local `.env` file.
+3. Add these lines:
+
+```env
+ENABLE_AI_CLASSIFICATION=true
+GROQ_API_KEY=your_personal_groq_api_key_here
+GROQ_MODEL=llama-3.1-8b-instant
+AI_MIN_KEYWORD_SCORE=4
+```
+
+4. Restart the worker and web app:
+
+```bash
+python -m reddit_leads.worker
+uvicorn reddit_leads.web:app --reload
+```
+
+Notes:
+
+- keep the key only in `.env`
+- do not put the key in the Chrome extension
+- do not commit the key to GitHub
+
 ### Optional phone notifications
 
 Configure at least one:
