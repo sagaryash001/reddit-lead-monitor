@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+reddit_leads.db
+*.sqlite3
+.db
+*.db-shm
+*.db-wal
+.env
+*.egg-info/

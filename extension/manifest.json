@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Reddit Lead Monitor",
+  "version": "0.2.0",
+  "description": "Desktop notifications and quick access for Reddit Lead Monitor.",
+  "permissions": ["alarms", "notifications", "storage", "tabs"],
+  "host_permissions": ["http://*/*", "https://*/*"],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_title": "Reddit Lead Monitor",
+    "default_popup": "popup.html"
+  },
+  "options_page": "options.html"
+}

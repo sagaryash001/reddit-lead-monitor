@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Reddit Lead Monitor Options</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="options-body">
+    <main class="panel wide-panel">
+      <header class="panel-header">
+        <div>
+          <div class="eyebrow">Chrome Extension</div>
+          <h1>Connection Settings</h1>
+        </div>
+      </header>
+
+      <form id="options-form" class="form-grid">
+        <label class="field">
+          <span>Backend URL</span>
+          <input id="backend-url" type="url" placeholder="http://127.0.0.1:8000" required />
+        </label>
+
+        <label class="field">
+          <span>Poll Interval (minutes)</span>
+          <input id="poll-minutes" type="number" min="1" step="1" required />
+        </label>
+
+        <label class="checkbox-field">
+          <input id="enabled" type="checkbox" />
+          <span>Enable browser polling and desktop notifications</span>
+        </label>
+
+        <div class="form-actions">
+          <button type="submit">Save Settings</button>
+          <button id="open-dashboard-button" type="button" class="ghost-button">Open Dashboard</button>
+        </div>
+      </form>
+
+      <div id="save-status" class="small muted"></div>
+
+      <section class="section">
+        <h2>24/7 Behavior</h2>
+        <p class="small muted">
+          The Chrome extension does not monitor Reddit by itself. Keep the Python worker running on an always-on machine or server. This extension only polls the backend alert feed and shows laptop notifications.
+        </p>
+        <p class="small muted">
+          For phone notifications, configure Telegram, Slack, or Discord in the backend environment variables.
+        </p>
+      </section>
+    </main>
+    <script src="options.js"></script>
+  </body>
+</html>

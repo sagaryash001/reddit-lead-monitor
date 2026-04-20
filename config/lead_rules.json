@@ -1,0 +1,87 @@
+{
+  "global": {
+    "strong_keywords": [
+      "need a website",
+      "need a website made",
+      "looking for a web developer",
+      "need a web developer",
+      "need someone to build my website",
+      "need a landing page",
+      "website designer needed",
+      "shopify developer needed",
+      "wordpress developer needed",
+      "need help with my website",
+      "looking for someone to build a site",
+      "looking for a website designer",
+      "need a redesign",
+      "need a website for my business"
+    ],
+    "medium_keywords": [
+      "website",
+      "web developer",
+      "web designer",
+      "landing page",
+      "shopify",
+      "wordpress",
+      "framer",
+      "webflow",
+      "custom website",
+      "portfolio site",
+      "ecommerce site",
+      "online store",
+      "redesign",
+      "ui ux",
+      "developer",
+      "designer"
+    ],
+    "negative_keywords": [
+      "full-time",
+      "internship",
+      "student project",
+      "not hiring",
+      "closed",
+      "solved",
+      "position filled",
+      "employee benefits",
+      "w2",
+      "salary range",
+      "job opening",
+      "hiring manager"
+    ],
+    "target_subreddits": [
+      "forhire",
+      "smallbusiness",
+      "startups",
+      "entrepreneur",
+      "webdev",
+      "designjobs"
+    ]
+  },
+  "subreddit_rules": {
+    "forhire": {
+      "boost_keywords": ["budget", "freelancer", "project", "website", "landing page"],
+      "negative_keywords": ["full-time", "agency hiring", "employee", "salary"],
+      "min_score": 5
+    },
+    "smallbusiness": {
+      "boost_keywords": ["my business", "customers", "website", "store", "online presence"],
+      "negative_keywords": ["course", "survey", "school assignment"],
+      "min_score": 4
+    },
+    "startups": {
+      "boost_keywords": ["mvp", "launch", "landing page", "startup", "saas"],
+      "negative_keywords": ["cofounder wanted", "join my startup unpaid"],
+      "min_score": 4
+    },
+    "entrepreneur": {
+      "boost_keywords": ["business", "conversion", "website", "brand", "lead gen"],
+      "negative_keywords": ["ebook", "newsletter swap"],
+      "min_score": 4
+    },
+    "webdev": {
+      "boost_keywords": ["hire", "freelancer", "quote", "build"],
+      "negative_keywords": ["tutorial", "how do i learn", "code review"],
+      "min_score": 5
+    }
+  }
+}

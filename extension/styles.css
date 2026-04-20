@@ -1,0 +1,193 @@
+:root {
+  --bg: #f4ede3;
+  --panel: #fff9f2;
+  --line: rgba(28, 25, 23, 0.14);
+  --text: #201a17;
+  --muted: #6b625b;
+  --accent: #b84f2b;
+  --accent-soft: #f6e3d4;
+  --shadow: 0 16px 32px rgba(90, 56, 35, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  color: var(--text);
+  background: linear-gradient(180deg, #f7efe4 0%, #efe1cf 100%);
+}
+
+.popup-body {
+  min-width: 360px;
+}
+
+.options-body {
+  min-width: 720px;
+  min-height: 100vh;
+  padding: 24px;
+}
+
+.panel {
+  padding: 16px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+}
+
+.wide-panel {
+  max-width: 760px;
+  margin: 0 auto;
+  border-radius: 24px;
+}
+
+.panel-header,
+.section-header,
+.footer-actions,
+.form-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.eyebrow {
+  color: var(--muted);
+  text-transform: uppercase;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+}
+
+h1,
+h2 {
+  margin: 4px 0 0;
+  font-family: "Georgia", serif;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 1rem;
+}
+
+.status-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin: 16px 0;
+}
+
+.status-card,
+.section,
+.list-item {
+  border: 1px solid var(--line);
+  background: white;
+  border-radius: 16px;
+}
+
+.status-card {
+  padding: 12px;
+}
+
+.value {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-top: 4px;
+}
+
+.label {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  color: var(--muted);
+  letter-spacing: 0.06em;
+}
+
+.section {
+  padding: 14px;
+  margin-top: 14px;
+}
+
+.list-block {
+  display: grid;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.list-item {
+  padding: 12px;
+}
+
+.list-item-title {
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.small {
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
+.muted {
+  color: var(--muted);
+}
+
+.link {
+  display: inline-block;
+  margin-top: 8px;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.form-grid {
+  display: grid;
+  gap: 14px;
+}
+
+.field {
+  display: grid;
+  gap: 8px;
+}
+
+.checkbox-field {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+input,
+button {
+  font: inherit;
+}
+
+input[type="url"],
+input[type="number"] {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  background: white;
+  color: var(--text);
+}
+
+button {
+  border: none;
+  border-radius: 12px;
+  padding: 10px 14px;
+  background: var(--accent);
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.ghost-button {
+  background: var(--accent-soft);
+  color: var(--text);
+}
+
+.footer-actions {
+  margin-top: 14px;
+}

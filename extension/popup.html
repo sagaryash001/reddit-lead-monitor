@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Reddit Lead Monitor</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="popup-body">
+    <main class="panel">
+      <header class="panel-header">
+        <div>
+          <div class="eyebrow">Reddit Lead Monitor</div>
+          <h1>Lead Alerts</h1>
+        </div>
+        <button id="refresh-button" class="ghost-button">Refresh</button>
+      </header>
+
+      <section class="status-grid">
+        <article class="status-card">
+          <div class="label">Backend</div>
+          <div id="backend-status" class="value">Checking...</div>
+          <div id="backend-url" class="small muted"></div>
+        </article>
+        <article class="status-card">
+          <div class="label">Worker Stats</div>
+          <div id="stats-summary" class="small">Loading...</div>
+        </article>
+      </section>
+
+      <section class="section">
+        <div class="section-header">
+          <h2>Recent Alerts</h2>
+          <span id="alert-meta" class="small muted"></span>
+        </div>
+        <div id="alerts-list" class="list-block">
+          <div class="small muted">Loading alerts...</div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="small muted">
+          Laptop notifications come from this extension. Phone notifications come from Telegram, Slack, or Discord configured on the backend.
+        </div>
+      </section>
+
+      <footer class="footer-actions">
+        <button id="open-dashboard-button">Open Dashboard</button>
+        <button id="open-options-button" class="ghost-button">Options</button>
+      </footer>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>
