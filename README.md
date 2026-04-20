@@ -55,7 +55,16 @@ Important operational detail:
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -e ".[dev]"
-cp .env.example .env
+```
+
+Create a local `.env` file yourself and add only the variables you need.
+
+Minimum example:
+
+```env
+REDDIT_CLIENT_ID=your_reddit_client_id
+REDDIT_CLIENT_SECRET=your_reddit_client_secret
+REDDIT_USER_AGENT=script:reddit-lead-monitor:v1.0 (by /u/your_username)
 ```
 
 Then start both processes:
