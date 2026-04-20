@@ -91,7 +91,7 @@ If these are not set, the worker can fall back to Reddit public JSON reads for l
 
 Simple setup for a personal Groq key:
 
-1. Create a Groq API key in your Groq dashboard.
+1. Create a Groq API key here: `https://console.groq.com/keys`
 2. Open your local `.env` file.
 3. Add these lines:
 
